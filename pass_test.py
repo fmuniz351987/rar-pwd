@@ -3,7 +3,7 @@ import subprocess
 
 file_name = input()
 
-code = subprocess.call(['rar', 'x', '-p-', file_name])
+code = subprocess.call(['unrar', 'x', '-p-', file_name])
 password = ''
 while(code):
   try:
