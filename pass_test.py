@@ -8,7 +8,7 @@ password = ''
 while(code):
   try:
     password = input()
-    code = subprocess.call(['rar', 'x', '-p' + password, file_name])
+    code = subprocess.call(['unrar', 'x', '-p' + password, file_name])
     print(password)
   except EOFError:
     break
