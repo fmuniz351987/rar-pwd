@@ -1,0 +1,12 @@
+Setup:
+You need to have rar installed on your linux machine.
+Create a file, e.g., words.txt, and put the first line containing how many combinations of words you want for each password. Every other line should be a single word to be used for password combinations.
+
+Usage:
+chmod +x pass_gen.py pass_test.py
+./pass_gen.py < words.txt > dict.txt
+Edit the first line of dict.txt so it contains the .rar file you want to crack.
+./pass_test.py < dict.txt
+
+And pray.
+
